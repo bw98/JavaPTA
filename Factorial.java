@@ -1,5 +1,5 @@
 /*
-7-3 求阶乘factorial（10 分）
+7-3 求阶乘Factorial（10 分）
 编程从键盘输入一个整数，计算出阶乘并输出。
 
 输入格式:
@@ -16,7 +16,7 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class factorial {
+public class Factorial {
     static BigInteger Factorial(BigInteger x)
     {
         if(x.equals(BigInteger.ONE)) {
