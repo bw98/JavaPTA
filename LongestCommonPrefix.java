@@ -1,6 +1,23 @@
+/*
+7-5 求解给定字符串的前缀（10 分）
+求解给定字符串的前缀。
+
+输入格式:
+输入数目不定的多对字符串，每行两个，以空格分开。 例如： filename filepath Tom Jack
+
+输出格式:
+返回两个字符串的最大前缀，例如： The common prefix is file No common prefix
+
+输入样例:
+filename filepath
+Tom Jack
+输出样例:
+The common prefix is file
+No common prefix
+*/
 import java.util.Scanner;
 
-public class LongestPrefix {
+public class LongestCommonPrefix {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String s1, s2;
