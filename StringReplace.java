@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class stringReplace {
+public class StringReplace {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String s = input.next();
