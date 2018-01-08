@@ -1,3 +1,6 @@
+/*
+用自带的 Calendar 类实现一个万年历
+*/
 import java.util.Calendar;
 import java.util.Scanner;
 
