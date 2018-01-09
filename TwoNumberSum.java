@@ -3,21 +3,18 @@ import java.util.Scanner;
 
 public class TwoNumberSum {
     public static void main(String[] args) {
-        Scanner input = null;
+        Scanner input = new Scanner(System.in);
         int a = 0, b = 0;
-        boolean flag = false;
-        while(!flag) {
+        while(true) {
             try {
-                input = new Scanner(System.in);
                 a = input.nextInt();
                 b = input.nextInt();
-                flag = true;
-            } catch (InputMismatchException ex) {
+                break;
+            } catch (InputMismatchException ex) { //直接写异常父类Exception
                 System.out.println("Input match error");
-                flag = false;
+                input.nextline();
             }
         }
-
         System.out.println("Input Successfully and sum is " + (a+b));
         input.close();
     }
