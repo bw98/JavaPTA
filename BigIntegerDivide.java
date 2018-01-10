@@ -24,7 +24,7 @@ public class BigIntegerDivide {
         Scanner input = new Scanner(System.in);
         BigInteger n = input.nextBigInteger();
         BigInteger max;
-        max = new BigInteger("9223372036854775807");
+        max = new BigInteger(Long.MAX_VALUE+""); //BigInteger类的构造函数只接受字符串，非字符串需要加""隐式地转换为字符串
         int count = 0;
         while (count < 3) {
             if(max.remainder(n) == BigInteger.ZERO) {
