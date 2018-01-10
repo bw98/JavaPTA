@@ -12,7 +12,7 @@ The number of occurrences is 2.
 import java.util.*;
 import java.math.*;
 import java.text.*;
-public class Main {
+public class Occurrences_Of_char {
 	public static void main (String[] args) {
 		Scanner input = new Scanner(System.in);
 		String s = new String(input.next());
