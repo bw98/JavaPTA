@@ -43,7 +43,7 @@ class RPentagon extends shape {
     }
     @Override
     public double getArea () {
-        return 5*e*e/(4*Math.tan(36*Math.PI/180)); //计算正n边形的面积公式为： Area=n×a×a/(tan((180度/n))×4);
+        return 5*e*e/(4*Math.tan(36*Math.PI/180)); //计算正n边形的面积公式为： Area=n×e×e/(4*tan((180度/n)));
         //Math.tan() 的参数是弧度形式，角度弧度互换公式: 弧度 = 角度*(Math.PI/180)
     }
     @Override
