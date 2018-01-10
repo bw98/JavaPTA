@@ -28,13 +28,13 @@ public class FindMaxObject_2 {
         Scanner input = new Scanner(System.in);
         String[] StringArray = {new String(input.next()), new String(input.next()), new String(input.next()), new String(input.next()), new String(input.next())};
         Integer[] IntegerArray = {new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt())};
-        System.out.println("Max string is " + findMaxObj(StringArray));
+        System.out.println("Max string is " + findMaxObj(StringArray)); //comparable类已实现 toString，可利用重载特性调用子类 String 的 toString
         System.out.println("Max integer is " + findMaxObj(IntegerArray));
         input.close();
     }
 
-    public static Object findMaxObj (Comparable[] a) { //利用多态，实现接口的类可以传入以同一接口的形式传入函数，进行操作
-        Object max = a[0];
+    public static comparable findMaxObj (Comparable[] a) { //利用多态
+        comparable max = a[0];
         for (Comparable t : a) {
             if (t.compareTo(max) > 0) {
                 max = t;
