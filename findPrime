@@ -1,0 +1,39 @@
+/*
+7-10 找素数（10 分）
+请编写程序，从键盘输入两个整数m，n，找出等于或大于m的前n个素数。
+输入格式:
+第一个整数为m，第二个整数为n；中间使用空格隔开。例如： 103 3
+
+输出格式:
+从小到大输出找到的等于或大于m的n个素数，每个一行。例如： 103 107 109
+
+INPUT:
+9223372036854775839 2
+
+OUTPUT:
+9223372036854775907
+9223372036854775931
+*/
+
+import java.util.*;
+import java.math.*;
+import java.text.*;
+public class findPrime {
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		BigInteger a = new BigInteger(input.next());
+		int b = input.nextInt();
+		
+		BigInteger key = a;
+		int i = 0;
+			while(i < b) {
+				if(key.isProbablePrime(10000)) //接近100%可能性key是素数
+				{
+					System.out.println(key);
+					++i;
+				}
+				key = key.add(BigInteger.ONE);
+			}
+		input.close();
+	}
+}
