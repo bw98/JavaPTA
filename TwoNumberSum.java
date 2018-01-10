@@ -36,7 +36,7 @@ public class TwoNumberSum {
                 break;
             } catch (InputMismatchException ex) { //直接写异常父类Exception
                 System.out.println("Input match error");
-                input.nextline(); //吸收缓冲区一行的字符，若第一轮，则吸收 i 9
+                input.nextLine(); //吸收缓冲区一行的字符，若第一轮，则吸收 i 9
             }
         }
         System.out.println("Input Successfully and sum is " + (a+b));
