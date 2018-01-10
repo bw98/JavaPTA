@@ -1,0 +1,31 @@
+/*
+使用公历类 GregorianCalendar，公历类 GregorianCalendar有方法setTimeInMillis(long);可以用它来设置从1970年1月1日算起的一个特定时间。
+请编程从键盘输入一个长整型的值，然后输出对应的年、月和日。例如输入：1234567898765，输出：2009-1-14
+输入格式:
+输入 1234567898765 （毫秒数）
+
+输出格式:
+输出 2009-1-14 （输出年、月和日，实际应该是2月，因为Java API 从0开始计算月份）
+
+INPUT
+1450921070108
+
+OUTPUT
+
+2015-11-24
+*/
+import java.util.*;
+import java.math.*;
+import java.text.*;
+import java.time.Year;
+
+public class Main {
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		GregorianCalendar g = new GregorianCalendar();
+		g.setTimeInMillis(input.nextLong());
+		System.out.println(g.get(g.YEAR) + "-" + g.get(g.MONTH) + "-" + g.get(g.DATE));
+		input.close();
+	}
+}
+
