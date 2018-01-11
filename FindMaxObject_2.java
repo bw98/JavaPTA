@@ -28,7 +28,7 @@ public class FindMaxObject_2 {
         Scanner input = new Scanner(System.in);
         String[] StringArray = {new String(input.next()), new String(input.next()), new String(input.next()), new String(input.next()), new String(input.next())};
         Integer[] IntegerArray = {new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt()), new Integer(input.nextInt())};
-        System.out.println("Max string is " + findMaxObj(StringArray)); //comparable类已实现 toString，可利用重载特性调用子类 String 的 toString
+        System.out.println("Max string is " + findMaxObj(StringArray)); //comparable类有抽象方法toString，可利用多态特性调用子类 String 的 toString
         System.out.println("Max integer is " + findMaxObj(IntegerArray));
         input.close();
     }
