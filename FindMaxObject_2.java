@@ -19,9 +19,8 @@ India
 Max string is Japan
 Max integer is 168
 */
-import javax.naming.event.ObjectChangeListener;
-import java.util.Scanner;
-import static jdk.nashorn.internal.objects.NativeMath.max;
+
+import java.util.*;
 
 public class FindMaxObject_2 {
     public static void main(String[] args) {
@@ -33,7 +32,7 @@ public class FindMaxObject_2 {
         input.close();
     }
 
-    public static comparable findMaxObj (Comparable[] a) { //利用向上造型特性与接口，实现该函数的复用
+    public static Comparable findMaxObj (Comparable[] a) { //利用向上造型特性与接口，实现该函数的复用
         comparable max = a[0];
         for (Comparable t : a) {
             if (t.compareTo(max) > 0) {
