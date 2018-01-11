@@ -33,7 +33,7 @@ public class FindMaxObject_2 {
         input.close();
     }
 
-    public static comparable findMaxObj (Comparable[] a) { //利用多态
+    public static comparable findMaxObj (Comparable[] a) { //利用向上造型特性与接口，实现该函数的复用
         comparable max = a[0];
         for (Comparable t : a) {
             if (t.compareTo(max) > 0) {
