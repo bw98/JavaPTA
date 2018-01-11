@@ -17,7 +17,7 @@ No common prefix
 */
 import java.util.Scanner;
 
-public class LongestCommonPrefix {
+public class StringLongestCommonPrefix {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String s1, s2;
