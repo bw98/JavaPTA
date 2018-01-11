@@ -26,7 +26,6 @@ public abstract class shape {// 抽象类
 485.5875
 84
 */
-import java.nio.channels.ReadPendingException;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -43,7 +42,7 @@ class RPentagon extends shape {
     }
     @Override
     public double getArea () {
-        return 5*e*e/(4*Math.tan(36*Math.PI/180)); //计算正n边形的面积公式为： Area=n×e×e/(4*tan((180度/n)));
+        return 5*e*e/(4*Math.tan(Math.PI/5)); //计算正n边形的面积公式为： Area=n×e×e/(4*tan((180度/n)));
         //Math.tan() 的参数是弧度形式，角度弧度互换公式: 弧度 = 角度*(Math.PI/180)
     }
     @Override
