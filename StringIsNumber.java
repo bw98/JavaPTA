@@ -8,9 +8,31 @@
 输出样例:
 true
 */
+
+import java.util.*;
+
+public class StringIsNumber{
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+        String num = cin.next();
+        boolean flag = true;
+        try{
+            double n = Double.parseDouble(num);
+        }
+        catch(NumberFormatException e){
+            flag = false;
+        }
+        if(n){
+            System.out.println("true");
+        }
+        else
+            System.out.println("false");
+        }
+}
+
 import java.util.Scanner;
 
-public class IsNumber {
+public class StringIsNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String s = new String(input.next());
